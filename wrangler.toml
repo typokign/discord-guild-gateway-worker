@@ -2,16 +2,16 @@ name = "discord-guild-gateway"
 type = "javascript"
 
 account_id = ""
-workers_dev = true
+workers_dev = false
 route = ""
 zone_id = ""
 compatibility_date = "2021-10-19"
 
 [vars]
-# CLIENT_ID = "example_client_id"
-# GUILD_ID = "1234"
-# GUILD_NAME = "My cool Discord guild"
-# JWT_PUB = "-----BEGIN PUBLIC KEY-----foobar-----END PUBLIC KEY-----
+CLIENT_ID = "example_client_id"
+GUILD_ID = "1234"
+GUILD_NAME = "My cool Discord guild"
+JWT_PUB = "-----BEGIN PUBLIC KEY-----foobar-----END PUBLIC KEY-----
 
 # [secrets]
 # CLIENT_SECRET

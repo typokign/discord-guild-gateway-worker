@@ -61,4 +61,3 @@ const handleCallback = async (request) => {
     },
   });
 };
-
