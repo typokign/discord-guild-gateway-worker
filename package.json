@@ -1,16 +1,22 @@
 {
   "private": true,
-  "name": "worker",
-  "version": "1.0.0",
-  "description": "A template for kick starting a Cloudflare Workers project",
-  "main": "index.js",
+  "name": "discord-guild-gateway-worker",
+  "version": "0.1.0",
+  "description": "A Cloudflare worker to restrict access to a site based on membership in a Discord guild (server)",
+  "main": "dist/main.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
   "author": "David Cruz <david@typokign.com>",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "jose": "^4.1.0"
   }
 }
