@@ -49,8 +49,8 @@ const handleCallback = async (request) => {
   const root = url.origin + '/';
   const cookie = [
     `discordAuthJWT=${jwt}`,
-    `Max-Age=${60 * 60 * 24}`, // seconds, expire in 24 hours
-    `Path=/`
+    `Max-Age=${60 * 60 * 24 * 7}`, // seconds, expire in 1 week
+    `Path=/`,
   ].join('; ');
 
   return new Response('Authorized, redirecting', {

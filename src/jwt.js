@@ -5,7 +5,7 @@ export const signJWT = async () => {
   return new SignJWT({})
     .setProtectedHeader({ alg: 'ES256' })
     .setIssuedAt()
-    .setExpirationTime('24h')
+    .setExpirationTime('7d')
     .sign(key);
 }
 
